@@ -122,3 +122,61 @@ footer {
     background-color: #e9ecef;
     color: #6c757d;
 }
+
+.card img {
+    width: 100%; /* A imagem ocupa a largura total do card */
+    height: auto; /* Mantém a proporção da imagem */
+    display: block; /* Remove espaço extra abaixo da imagem */
+    margin-bottom: 10px; /* Espaço entre a imagem e o título */
+    object-fit: cover; /* Garante que a imagem cubra a área, cortando se necessário */
+    max-height: 200px; /* Defina uma altura máxima para as imagens */
+}
+
+/* Outros estilos do card podem precisar de ajustes para acomodar a imagem */
+.card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 20px;
+    width: calc(33% - 20px); /* Exemplo para 3 cards por linha */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex; /* Para organizar os elementos dentro do card */
+    flex-direction: column; /* Imagem acima, depois texto */
+}
+
+.card h2 {
+    margin-top: 0; /* Remove a margem padrão do h2 */
+    margin-bottom: 5px;
+}
+
+.card .details {
+    margin-bottom: 10px;
+}
+
+.card a {
+    display: block;
+    text-align: center;
+    padding: 8px;
+    background-color: #0a9396;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.card a:hover {
+    background-color: #005f73;
+}
+
+/* ... outras regras CSS ... */
+
+/*@media (max-width: 900px) {
+    .card {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 600px) {
+    .card {
+        width: 100%;
+    }
+}*/
